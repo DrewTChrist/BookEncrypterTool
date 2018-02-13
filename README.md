@@ -4,7 +4,7 @@ A tool that uses [BookEncrypterLib](http://github.com/drewtchrist/bookencrypterl
 
 ![alt text](https://github.com/DrewTChrist/BookEncrypterTool/blob/master/BookEncrypterTool/BookEncrypterTool/screenshot.PNG)
 
-
+---
 ## Simple Instructions
 1. Create a Magic Decoder Ring
    * You will be prompted to select a text file (.txt) that you will use as your book
