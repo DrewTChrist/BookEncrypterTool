@@ -145,7 +145,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Magic Decoder Ring";
+            this.Text = "Book Encrypter Tool";
             this.pnlButtonHolder.ResumeLayout(false);
             this.ResumeLayout(false);
 
