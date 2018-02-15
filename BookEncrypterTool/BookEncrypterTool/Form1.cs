@@ -30,11 +30,6 @@ namespace BookEncrypterTool
         private void btnCreateDecoder_Click(object sender, EventArgs e)
         {
             mdr = new MagicDecoderRing();
-            tbMessages.Clear();
-            foreach(string s in mdr.Book.Key)
-            {
-                tbMessages.Text += s + ' ';
-            }
             btnAddClearText.Enabled = true;
             btnAddCipherText.Enabled = true;
         }
