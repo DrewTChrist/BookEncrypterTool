@@ -25,6 +25,7 @@ namespace BookEncrypterTool
             btnSaveClearText.Enabled = false;
             btnSaveCipherText.Enabled = false;
         }
+
         MagicDecoderRing mdr;
 
         private void btnCreateDecoder_Click(object sender, EventArgs e)
@@ -38,10 +39,8 @@ namespace BookEncrypterTool
         {
             mdr.addClearTextMessage();
             tbMessages.Clear();
-            foreach(char c in mdr.ClearText.Text)
-            {
+            foreach (char c in mdr.ClearText.Text)
                 tbMessages.Text += c;
-            }
             btnDecode.Enabled = false;
             btnEncode.Enabled = true;
         }
@@ -51,9 +50,7 @@ namespace BookEncrypterTool
             mdr.addCipherTextMessage();
             tbMessages.Clear();
             foreach(char c in mdr.CipherText.Text)
-            {
                 tbMessages.Text += c;
-            }
             btnEncode.Enabled = false;
             btnDecode.Enabled = true;
             btnSaveClearText.Enabled = false;
@@ -65,9 +62,7 @@ namespace BookEncrypterTool
             mdr.Encode();
             tbMessages.Clear();
             foreach(char c in mdr.CipherText.Text)
-            {
                 tbMessages.Text += c;
-            }
             btnEncode.Enabled = false;
             btnDecode.Enabled = true;
             btnSaveCipherText.Enabled = true;
@@ -79,9 +74,7 @@ namespace BookEncrypterTool
             mdr.Decode();
             tbMessages.Clear();
             foreach(char c in mdr.ClearText.Text)
-            {
                 tbMessages.Text += c;
-            }
             btnDecode.Enabled = false;
             btnEncode.Enabled = true;
             btnSaveClearText.Enabled = true;
